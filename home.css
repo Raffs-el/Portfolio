@@ -105,3 +105,39 @@ a {
     align-items: center;
 }
 
+.foto-1, .fundo-2, .menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 320px;
+    }
+
+    .nav, .foto-2 {
+        display: none;
+    }
+
+    .foto-1, .fundo-2, .menu {
+        display: block;
+    }
+
+    .banner {
+        height: 665px;
+        flex-direction: column;
+
+        background-size: 100%;
+    }
+
+    .p1 {
+        font-size: 29px;
+    }
+
+    .p2 {
+        font-size: 39px;
+    }
+
+    .p3, .p4 {
+        font-size: 15px;
+    }
+}
