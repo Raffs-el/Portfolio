@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.grid {
+    width: 1440px;
+}
+
+header {
+    background-color: #f5f5f5 0%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alinhamento img {
+    margin: 0;
+}
+
+body {
+    height: 3722px;
+    background: linear-gradient(180deg, #000303 55.7%, #946643 117.14%);
+}
+
+.nav {
+    width: 421px;
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+
+    text-decoration: none;
+}
+
+.banner {
+    height: 1000px;
+
+    background-color: #000303;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-image: url(assets/img/Vector.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.p1 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+
+    color: #946643;
+
+    margin-bottom: 29px;
+}
+
+.p2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 86px;
+
+    color: #F7B993;
+
+    margin-bottom: 29px;
+}
+
+.p3 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #F5F5F5;
+}
+
+.p4 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #C18C54;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
