@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Miranda</title>
     <link href="home.css" type="text/css" rel="stylesheet">
+    <script src="home.js" defer></script>
 </head>
 
 <body>
@@ -13,26 +14,72 @@
         <div class="grid alinhamento">
             <img src="assets/img/Logo.svg" alt="logo">
     
-            <div class="nav">
-                <a href="index.html">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Porfólio</a>
-                <a href="#">Contato</a>
-            </div>
+            <nav class="nav">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="#">Sobre</a> </li>
+                <li> <a href="#">Serviços</a> </li>
+                <li> <a href="#">Porfólio</a> </li>
+                <li> <a href="#">Contato</a> </li>
+            </nav>
+
             <img src="assets/img/menu.svg" class="menu">
         </div>
     </header>
 
-    <section class="banner">
+    <section id="banner">
         <img src="assets/img/Foto-2.svg" class="foto-1">
+
         <div class="texto">
             <p class="p1">Olá!</p>
             <p class="p2">Me chamo Rafael,</p>
             <p class="p3">sou Desenvolvedor Front-end e este é o meu <span class="p4">portfólio</span>.</p>
         </div>
-        <img src="assets/img/foto.svg" class="foto-2">
 
+        <img src="assets/img/foto.svg" class="foto-2">
+    </section>
+
+    <section class="grid" id="sobre-mim">
+        <h1 class="sobre-1">Sobre <span class="mim">mim</span></h1>
+
+        <img src="assets/img/Foto-sobre.svg">
+
+        <div class="alinhar">
+            <h1>Sobre <span class="mim">mim</span></h1>
+
+            <p class="sobre-p">Me chamo Rafael e sou desenvolvedor Front-End formado pelo SENAI.</p>
+
+            <p class="sobre-p1">Desde pequeno estou em contato tecnologia através de videogames e computadores.<br>
+                Meu primeiro contato com programação foi durante a minha infância através do RPG Maker <br>
+                (uma engine de desenvolvimento de jogos RPG), onde criei diversos jogos e desde então <br> 
+                meu interesse por tecnologia aumentou.</p>
+
+            <p class="sobre-p2">Com o avanço do meio técnico-científico informacional e a democratização da internet no <br>
+                mundo, percebi que muitos sites estão sendo criados sem muita especialização na parte visual, <br>
+                com códigos embaralhados, falta de responsividade e, principalmente, links e imagens <br> 
+                quebrados ou sem tamanho padronizado. </p>
+
+            <p class="sobre-p3">Com isso, através de estudos e muitas pesquisas, decidi trabalhar com a parte de programação <br>
+                front-end para contribuir com a experiência que o usuário tem no site para que ele não sofra <br>
+                uma interação negativa como eu tenho quando acesso um site mal desenvolvido.</p>
+                
+            <div class="link"> 
+                <a class="links" href="https://www.linkedin.com/in/rafael--miranda/" target="_blank"> <img src="assets/img/github.svg"> </a>
+                <a class="links" href="https://github.com/Raffs-el" target="_blank"> <img src="assets/img/linkedin.svg"> </a>
+            </div>
+
+            <div class="botao">
+                <button class="curriculum" type="button">Baixar meu curriculum</button>
+            </div>
+
+            <div class="link-1"> 
+                <a class="links-1" href="https://www.linkedin.com/in/rafael--miranda/" target="_blank"> <img src="assets/img/github.svg"> </a>
+                <a class="links-1" href="https://github.com/Raffs-el" target="_blank"> <img src="assets/img/linkedin.svg"> </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-descricao">
+        <p class="habilidades">Habilidades</p>
     </section>
 
 </body>

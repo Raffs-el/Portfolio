@@ -49,7 +49,7 @@ a {
     text-decoration: none;
 }
 
-.banner {
+#banner {
     height: 1000px;
 
     background-color: #000303;
@@ -109,8 +109,103 @@ a {
     display: none;
 }
 
+#sobre-mim {
+    margin-top: 285px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+
+    color: #f5f5f5;
+
+    text-align: center;
+}
+
+.mim {
+    color: #F7B993;
+}
+
+.sobre-p {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+
+    color: #F7B993;
+
+    margin-top: 44px;
+}
+
+.sobre-p1, .sobre-p2, .sobre-p3 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #f5f5f5;
+}
+
+.sobre-p1 {
+    margin-top: 54px;
+}
+
+.sobre-p2, .sobre-p3 {
+    margin-top: 22px;
+}
+
+.link {
+    width: 140px;
+    display: flex;
+}
+
+.links {
+    margin-top: 40px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 41px;
+}
+
+.curriculum {
+    width: 219px;
+    height: 48px;
+
+    outline: 0;
+    border: none;
+
+    background: linear-gradient(90deg, #F7B993 0%, #DFA57F 26.56%, #C7916C 52.6%, #B17E5B 77.08%, #946643 100%);
+    border-radius: 70px;   
+
+    font-family: 'Cabin', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: #f5f5f5;
+}
+
+.habilidades {
+    margin-top: 133px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+
+    color: #f5f5f5;
+
+    text-align: center;
+}
+
+.sobre-1 {
+    display: none;
+}
+
 @media (max-width: 600px) {
-    .grid {
+    .grid, .alinhar {
         width: 320px;
     }
 
@@ -122,7 +217,7 @@ a {
         display: block;
     }
 
-    .banner {
+    #banner {
         height: 665px;
         flex-direction: column;
 
@@ -139,5 +234,54 @@ a {
 
     .p3, .p4 {
         font-size: 15px;
+    }
+
+    #sobre-mim {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 99px;
+    }
+
+    #sobre-mim img {
+        width: 300px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .sobre-1 {
+        display: block;
+        
+        font-size: 40px;
+
+        margin-bottom: 64px;
+    }
+
+    .sobre-p {
+        font-size: 18px;
+
+        margin-top: 53px;
+
+        text-align: center;
+    }
+
+    .sobre-p1, .sobre-p2, .sobre-p3 {
+        font-size: 16px;
+
+    }
+
+    .link {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .link-1 {
+        display: block;
+        display: flex;
     }
 }
