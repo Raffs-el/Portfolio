@@ -4,6 +4,7 @@
 * {
     margin: 0 auto;
     padding: 0 auto;
+    scroll-behavior: smooth;
 }
 
 .grid {
@@ -17,7 +18,10 @@ header {
     display: flex;
     align-items: center;
     
+    position: fixed;
+    width: 100%;
 }
+
 
 .alinhamento {
     display: flex;
@@ -25,25 +29,61 @@ header {
     justify-content: space-between;
 }
 
-.alinhamento img {
-    margin: 0;
-}
-
 body {
     height: 3722px;
     background: linear-gradient(180deg, #000303 55.7%, #946643 117.14%);
 }
 
-.nav {
+ul {
+    display: flex;
+    justify-content: space-between;
+    
     width: 421px;
+
+    list-style: none;
+
+    margin-left: 969px;
+    
+}
+
+
+nav {
+   
     margin: 0;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.nav-menu {
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.nav-menu:hover {
+    color: #F7B993;
+}
+
+.nav-menu:after {
+    content: "";
+    position: absolute;
+    background-color: #F7B993;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-menu:hover:after {
+    width: 100%;
 }
 
 a {
     font-family: 'Montserrat', sans-serif;
+
     color: #f5f5f5;
 
     text-decoration: none;
@@ -113,6 +153,8 @@ a {
     margin-top: 285px;
     display: flex;
     justify-content: space-between;
+    
+    padding-top: 170px;
 }
 
 h1 {
@@ -203,6 +245,50 @@ h1 {
 .sobre-1 {
     display: none;
 }
+
+.box {
+    transform: translate(-900px, 400px);
+}
+
+.box span {
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    
+    border-bottom: 2px solid #F5F5F5;
+    border-right: 2px solid #F5F5F5;
+    
+    margin: -10px;
+
+    transform: rotate(45deg);
+    animation: animate 2.5s infinite ;
+}
+
+.box span:nth-child(2) {
+    animation-delay: -.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 
 @media (max-width: 600px) {
     .grid, .alinhar {
