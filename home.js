@@ -83,6 +83,20 @@ let progress2 = setInterval(() => {
   }
 }, speed2);
 
+const observer2 = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+          entry.target.classList.add('mostrar2');
+      } else {
+          entry.target.classList.remove('mostrar2');
+      }
+
+  });
+});
+
+const hiddenElements2 = document.querySelectorAll('.escondido2');
+hiddenElements2.forEach((el) => observer2.observe(el));
 
 
 
