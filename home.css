@@ -43,7 +43,7 @@ header {
 
 
 body {
-    height: 3722px;
+    height: 6000px;
     background: linear-gradient(180deg, #000303 55.7%, #946643 117.14%);
 }
 
@@ -767,14 +767,60 @@ h1 {
     transform: translateX(0);
 }
 
+.servicos-alinhamento {
+    width: 931px;
+}
+
+#servicos {
+    padding-top: 120px;
+    margin-top: 281px;
+}
+
+.s-title {
+    margin-bottom: 150px;
+}
+
+.servico-caixa {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    width: 223px;
+    height: 223px;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    filter: drop-shadow(0px 12px 34px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(6px);
+
+    transition: all 0.5s;
+}
 
 
+.servico-t {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F5F5F5;
+    margin-top: 21px;
+    transition: all 0.5s;
+}
+
+.servico-caixa:hover{
+    transform: rotate(45deg);
+}
 
 
+.serviços-linha1, .serviços-linha2 {
+    display: flex;
+}
 
-
-
-
+.serviços-linha1 {
+    margin-bottom: 78px;
+}
 
 
 
