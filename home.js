@@ -100,6 +100,22 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 
 
 
+const observer3 = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('mostrar3');
+        } else {
+            entry.target.classList.remove('mostrar3');
+        }
+  
+    });
+  });
+  
+  const hiddenElements3 = document.querySelectorAll('.escondido3');
+  hiddenElements3.forEach((el) => observer3.observe(el));
+  
+
 
 
 

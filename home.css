@@ -309,7 +309,7 @@ h1 {
 }
 
 
-.habilidades, .qualificacoes {
+.habilidades, .qualificacoes, .como-funciona {
     margin-top: 133px;
     margin-bottom: 73px;
 
@@ -792,11 +792,18 @@ h1 {
     width: 223px;
     height: 223px;
 
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    box-sizing: border-box;
+    width: 223px;
+    height: 223px;
+    left: 490px;
+    top: 3976px;
+    
     filter: drop-shadow(0px 12px 34px rgba(0, 0, 0, 0.25));
     backdrop-filter: blur(6px);
 
     transition: all 0.5s;
+    
+    border: 2px solid #F5F5F5;
 }
 
 
@@ -805,12 +812,13 @@ h1 {
     font-size: 20px;
     font-weight: 500;
     color: #F5F5F5;
-    margin-top: 21px;
+    margin: 21px 0px 0px;
     transition: all 0.5s;
 }
 
 .servico-caixa:hover{
     transform: rotate(45deg);
+    border-color: #F7B993;
 }
 
 
@@ -821,6 +829,57 @@ h1 {
 .serviços-linha1 {
     margin-bottom: 78px;
 }
+
+.ret {
+    height: 7px;
+    width: 7px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+}
+
+.reticencias {
+    display: flex;
+    width: 76px;
+}
+
+.c-f-align {
+    display: flex;
+    align-items: center;
+}
+
+.c-f-texto {
+    font-family: 'Cabin', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #F5F5F5;
+    opacity: 50%;
+    transition: all 0.5s;
+
+    cursor: pointer;
+}
+
+.c-f-texto:hover {
+    opacity: 100%;
+}
+
+.escondido3 {
+    opacity: 0;
+
+    transition: all 1.7s;
+
+    filter: blur(5px);
+
+    transform: translateY(25%);
+}
+
+
+.mostrar3 {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
 
 
 
