@@ -43,7 +43,7 @@ header {
 
 
 body {
-    height: 6000px;
+    height: 10311px;
     background: linear-gradient(180deg, #000303 55.7%, #946643 117.14%);
 }
 
@@ -880,15 +880,85 @@ h1 {
 }
 
 
-.serviços-background {
+.serviços-background, .port-h1 {
     height: 490px;
     background-color: #C18C54;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 150px
+    margin-bottom: 150px;
+    
 }
+
+.funciona {
+    margin-bottom: 282px;
+}
+
+#portfolio {
+    padding-top: 120px;
+}
+
+.port-sub {
+    color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+    text-align: center;
+
+    margin-bottom: 147px;
+}
+
+
+.escondido4 {
+    opacity: 0;
+
+    transition: all 1s;
+
+    filter: blur(12px);
+}
+
+
+.mostrar4 {
+    opacity: 1;
+
+    filter: blur(0px);
+}
+
+
+.linha-1, .linha-2, .linha-3 {
+    display: flex;
+}
+
+.projeto-1, .projeto-3, .projeto-4, .projeto-5, .projeto-6, .projeto-8 {
+    height: 468px;
+    width: 467px;
+    background-color: white;
+}
+
+.projeto-4, .projeto-6 {
+    transform: translateY(-90px);
+}
+
+.projeto-2, .projeto-7, .projeto-9 {
+    width: 467px;
+    height: 557px;
+    background-color: white;
+
+    margin-bottom: 13px;
+}
+
+.projeto-7, .projeto-9 {
+    transform: translateY(-76px);
+}
+
+.projeto-8 {
+    transform: translateY(13px);
+}
+
+
+
 
 
 
