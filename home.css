@@ -931,11 +931,12 @@ h1 {
     display: flex;
 }
 
-.projeto-1, .projeto-3, .projeto-4, .projeto-5, .projeto-6, .projeto-8 {
+#projeto-1, .projeto-3, .projeto-4, .projeto-5, .projeto-6, .projeto-8 {
     height: 468px;
     width: 467px;
-    background-color: white;
+    background-color: #000303;
 }
+
 
 .projeto-4, .projeto-6 {
     transform: translateY(-90px);
@@ -944,7 +945,7 @@ h1 {
 .projeto-2, .projeto-7, .projeto-9 {
     width: 467px;
     height: 557px;
-    background-color: white;
+    background-color: #000303;
 
     margin-bottom: 13px;
 }
@@ -957,14 +958,67 @@ h1 {
     transform: translateY(13px);
 }
 
+.linkParaOProjeto {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #000303;
+    margin-top: 27px;
+    transition: 0.3s;
+    transform: translateX(-160px);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nomeDoProjeto {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.3s;
+    margin-left: 27px;
+    transform: translateY(500px);
+}
+
+#projeto-1, #projeto-2 {
+    overflow: hidden;
+    transition: .5s;
+}
+
+.projeto-1-img img {
+    position: absolute;
+}
+
+.projeto-1-img, .projeto-2-img {
+    transition: .5s;
+}
 
 
+.projeto-1-img:hover, .projeto-2-img:hover {
+    opacity: 50%;
+}
 
+.projeto-descricao {
+    overflow: hidden;
+    height: 100%;
+}
 
+#projeto-1:hover .linkParaOProjeto, #projeto-2:hover .linkParaOProjeto {
+    transform: translateX(27px);
+    transition-delay: 0.1s;
+}
 
-
-
-
+#projeto-1:hover .nomeDoProjeto, #projeto-2:hover .nomeDoProjeto {
+    transform: translateY(348px);
+    transition-delay: 0.1s;
+}
 
 @media (max-width: 600px) {
     .grid, .alinhar {
