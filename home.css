@@ -931,18 +931,18 @@ h1 {
     display: flex;
 }
 
-#projeto-1, .projeto-3, .projeto-4, .projeto-5, .projeto-6, .projeto-8 {
+#projeto-1, #projeto-3, #projeto-4, #projeto-5, #projeto-6, #projeto-8 {
     height: 468px;
     width: 467px;
     background-color: #000303;
 }
 
 
-.projeto-4, .projeto-6 {
+#projeto-4, #projeto-6 {
     transform: translateY(-90px);
 }
 
-.projeto-2, .projeto-7, .projeto-9 {
+#projeto-2, #projeto-7, #projeto-9 {
     width: 467px;
     height: 557px;
     background-color: #000303;
@@ -950,15 +950,15 @@ h1 {
     margin-bottom: 13px;
 }
 
-.projeto-7, .projeto-9 {
+#projeto-7, #projeto-9 {
     transform: translateY(-76px);
 }
 
-.projeto-8 {
+#projeto-8 {
     transform: translateY(13px);
 }
 
-.linkParaOProjeto {
+.linkParaOProjeto  {
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -987,21 +987,20 @@ h1 {
     transform: translateY(500px);
 }
 
-#projeto-1, #projeto-2 {
+#projeto-1, #projeto-2, #projeto-3,  #projeto-4, #projeto-5, #projeto-6, #projeto-7, #projeto-8, #projeto-9 {
     overflow: hidden;
     transition: .5s;
 }
 
-.projeto-1-img img {
+.projeto-1-img img, .projeto-2-img img, .projeto-3-img img, .projeto-4-img img, .projeto-5-img img, .projeto-6-img img, .projeto-7-img img, .projeto-8-img img, .projeto-9-img img {
     position: absolute;
 }
 
-.projeto-1-img, .projeto-2-img {
+.projeto-1-img, .projeto-2-img, .projeto-3-img, .projeto-4-img, .projeto-5-img, .projeto-6-img, .projeto-7-img, .projeto-8-img, .projeto-9-img {
     transition: .5s;
 }
 
-
-.projeto-1-img:hover, .projeto-2-img:hover {
+.projeto-1-img:hover, .projeto-2-img:hover,  .projeto-3-img:hover, .projeto-4-img:hover, .projeto-5-img:hover, .projeto-6-img:hover, .projeto-7-img:hover, .projeto-8-img:hover, .projeto-9-img:hover {
     opacity: 50%;
 }
 
@@ -1010,15 +1009,21 @@ h1 {
     height: 100%;
 }
 
-#projeto-1:hover .linkParaOProjeto, #projeto-2:hover .linkParaOProjeto {
+#projeto-1:hover .linkParaOProjeto, #projeto-2:hover .linkParaOProjeto , #projeto-3:hover .linkParaOProjeto, #projeto-4:hover .linkParaOProjeto, #projeto-5:hover .linkParaOProjeto, #projeto-6:hover .linkParaOProjeto, #projeto-7:hover .linkParaOProjeto, #projeto-8:hover .linkParaOProjeto, #projeto-9:hover .linkParaOProjeto {
     transform: translateX(27px);
     transition-delay: 0.1s;
 }
 
-#projeto-1:hover .nomeDoProjeto, #projeto-2:hover .nomeDoProjeto {
+#projeto-1:hover .nomeDoProjeto, #projeto-3:hover .nomeDoProjeto, #projeto-4:hover .nomeDoProjeto, #projeto-5:hover .nomeDoProjeto, #projeto-6:hover .nomeDoProjeto, #projeto-8:hover .nomeDoProjeto {
     transform: translateY(348px);
     transition-delay: 0.1s;
 }
+
+#projeto-2:hover .nomeDoProjeto, #projeto-7:hover .nomeDoProjeto, #projeto-9:hover .nomeDoProjeto {
+    transform: translateY(435px);
+    transition-delay: 0.1s;
+}
+
 
 @media (max-width: 600px) {
     .grid, .alinhar {
