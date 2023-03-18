@@ -1024,6 +1024,30 @@ h1 {
     transition-delay: 0.1s;
 }
 
+.pag {
+    width: 358px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-layout-pag {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 5px;
+
+    background: none;
+
+    color: #F5F5F5;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+
+    border-color: #F5F5F5;
+    outline: none;
+}
 
 @media (max-width: 600px) {
     .grid, .alinhar {
