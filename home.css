@@ -43,7 +43,7 @@ header {
 
 
 body {
-    height: 10311px;
+    height: 9340px;
     background: linear-gradient(180deg, #000303 55.7%, #946643 117.14%);
 }
 
@@ -413,18 +413,16 @@ h1 {
 .escondido1 {
     opacity: 0;
 
-    transition: all 1.7s;
+    transition: all 1s;
 
-    filter: blur(5px);
-
-    transform: translateY(50%);
+    filter: blur(12px);
 }
 
 
 .mostrar1 {
     opacity: 1;
-    filter: blur(0);
-    transform: translate(0);
+
+    filter: blur(0px);
 }
 
 
@@ -753,18 +751,16 @@ h1 {
 .escondido2 {
     opacity: 0;
 
-    transition: all 1.7s;
+    transition: all 1s;
 
-    filter: blur(5px);
-
-    transform: translateX(-100%);
+    filter: blur(12px);
 }
 
 
 .mostrar2 {
     opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+
+    filter: blur(0px);
 }
 
 .servicos-alinhamento {
@@ -773,7 +769,7 @@ h1 {
 
 #servicos {
     padding-top: 120px;
-    margin-top: 281px;
+    margin-top: 100px;
 }
 
 .s-title {
@@ -830,37 +826,6 @@ h1 {
     margin-bottom: 78px;
 }
 
-.ret {
-    height: 7px;
-    width: 7px;
-    background-color: #F5F5F5;
-    border-radius: 50%;
-}
-
-.reticencias {
-    display: flex;
-    width: 76px;
-}
-
-.c-f-align {
-    display: flex;
-    align-items: center;
-}
-
-.c-f-texto {
-    font-family: 'Cabin', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    color: #F5F5F5;
-    opacity: 50%;
-    transition: all 0.5s;
-
-    cursor: pointer;
-}
-
-.c-f-texto:hover {
-    opacity: 100%;
-}
 
 .escondido3 {
     opacity: 0;
@@ -1044,12 +1009,13 @@ h1 {
 
 .contato-card {
     display: flex;
+    margin-bottom: 281px;
 }
 
 .card-1 {
     width: 852px;
     height: 787px;
-    background-color: #050606;
+    background-color: #000000;
 
     display: flex;
   
@@ -1063,7 +1029,7 @@ h1 {
     height: 697px;
 }
 
-.titulo-card-1 {
+.titulo-card-1, .titulo-card-2 {
     color: #FFFFFF;
     font-family: 'Cabin', sans-serif;
     font-size: 16px;
@@ -1108,17 +1074,93 @@ form {
     width: 670px;
 }
 
-#mensagem {
-    height: 222px;
-    width: 650px;
-}
-
 #formulario input {
-    background-color: #050606 ;
+    font-family: 'Prompt', sans-serif;
+    background-color: #000000 ;
     outline: none;
     border: none;
 
     color: #FFFFFF;
+}
+
+#formulario textarea {
+    font-family: 'Prompt', sans-serif;
+    background-color: #000000 ;
+    outline: none;
+    border: none;
+
+    color: #FFFFFF;
+}
+
+#formulario #enviar {
+    width: 303px;
+    height: 48px;
+    background-color: wheat;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+    background: linear-gradient(270deg, #F7B993 0%, #DFA57F 26.56%, #C7916C 52.6%, #B17E5B 77.08%, #946643 100%);
+    border-radius: 70px;
+    
+    transition: all .5s;
+}
+
+#enviar:hover {
+    transform: scale(1.05);
+}
+
+.card-2-infos {
+    margin-top: 42px;
+}
+
+.card-2-subtitle {
+    margin-left: 49px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F7B993;
+    margin-bottom: 17px;
+}
+
+.card-2-descricao {
+    margin-left: 49px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 43px;
+}
+
+.titulo-card-2 {
+    margin-bottom: 82px;
+    margin-left: 49px;
+}
+
+.links-contato {
+    width: 166px;
+    display: flex;
+    justify-content: space-between;    
+    transform: translateY(350px);
+}
+
+footer {
+    height: 74px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-descricao {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
