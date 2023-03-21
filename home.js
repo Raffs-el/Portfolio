@@ -159,8 +159,6 @@ const observer3 = new IntersectionObserver ((entries) => {
 
 
 
-
-
 const observer1 = new IntersectionObserver ((entries) => {
     entries.forEach((entry) => {
         console.log(entry)

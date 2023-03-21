@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap');
 
 * {
     margin: 0 auto;
@@ -880,7 +880,7 @@ h1 {
 }
 
 
-.serviços-background, .port-h1 {
+.serviços-background, .port-h1, .contato-h1 {
     height: 490px;
     background-color: #C18C54;
     display: flex;
@@ -1024,29 +1024,101 @@ h1 {
     transition-delay: 0.1s;
 }
 
-.pag {
-    width: 358px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#contato {
+    padding-top: 120px;
 }
 
-.btn-layout-pag {
-    width: 40px;
-    height: 40px;
-
-    border-radius: 5px;
-
-    background: none;
-
+.cont-sub {
     color: #F5F5F5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+    text-align: center;
+    margin-bottom: 147px;
+}
+
+.cont-sub-2 {
+    color: #F7B993;
+}
+
+.contato-card {
+    display: flex;
+}
+
+.card-1 {
+    width: 852px;
+    height: 787px;
+    background-color: #050606;
+
+    display: flex;
+  
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.card-1-infos {
+    width: 748px;
+    height: 697px;
+}
+
+.titulo-card-1 {
+    color: #FFFFFF;
     font-family: 'Cabin', sans-serif;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 500;
 
-    border-color: #F5F5F5;
+    text-transform: uppercase;
+}
+
+.card-2 {
+    width: 588px;
+    height: 787px;
+    background-color: #000000;
+}
+
+.form-title {
+    font-family: 'Prompt', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 612px;
+    justify-content: space-between;
+}
+
+.linha-input {
+    width: 748px;
+    height: 1px;
+    background-color: #F7B993;
+    margin-top: 15px
+}
+
+#nome, #email {
+    width: 685px;
+}
+
+#assunto {
+    width: 670px;
+}
+
+#mensagem {
+    height: 222px;
+    width: 650px;
+}
+
+#formulario input {
+    background-color: #050606 ;
     outline: none;
+    border: none;
+
+    color: #FFFFFF;
 }
 
 @media (max-width: 600px) {
