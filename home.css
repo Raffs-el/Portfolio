@@ -8,6 +8,9 @@
     scroll-behavior: smooth;
 }
 
+.wrapper {
+    display: none;
+}
 
 .grid {
     width: 1440px;
@@ -525,8 +528,6 @@ h1 {
 }
 
 
-
-
 .alinhar {
 	-webkit-animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand-fwd-bottom 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -560,6 +561,7 @@ h1 {
     background: #946643;
 }
 
+
 .skill-bar .skill-per{
     position: relative;
     display: block;
@@ -572,11 +574,13 @@ h1 {
     margin: 0;
 }
 
+
 .skill-per.css{
     width: 90%;
     animation-delay: 0.2s;
     margin: 0;
 }
+
 
 .skill-per.javascript{
     width: 50%;
@@ -584,11 +588,13 @@ h1 {
     margin: 0;
 }
 
+
 .skill-per.angular{
     width: 90%;
     animation-delay: 0.2s;
     margin: 0;
 }
+
 
 .skill-per.jquery{
     width: 60%;
@@ -596,11 +602,13 @@ h1 {
     margin: 0;
 }
 
+
 .skill-per.typescript{
     width: 40%;
     animation-delay: 0.2s;
     margin: 0;
 }
+
 
 .line2, .line5 {
     margin-top: 36px;
@@ -632,6 +640,7 @@ h1 {
     z-index: 1;
 }
 
+
 .tooltip::before{
     content: '';
     position: absolute;
@@ -644,17 +653,20 @@ h1 {
     transform: translateX(-50%) rotate(45deg);
 }
 
+
 .programas {
     margin-top: 136px;
     display: flex;
     width: 600px;
 }
 
+
 .programa {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 .t-programa {
     font-family: 'Montserrat', sans-serif;
@@ -711,6 +723,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+
 .q-t2 {
     font-family: 'Cabin', sans-serif;
     font-size: 16px;
@@ -718,9 +731,11 @@ h1 {
     color: #C7916C;
 }
 
+
 .q-data {
     color: #F5F5F5;
 }
+
 
 .q-texto {
     height: 63px;
@@ -732,6 +747,7 @@ h1 {
     
 }
 
+
 .pin {
     width: 10px;
     height: 10px;
@@ -739,6 +755,7 @@ h1 {
     border-radius: 50%;
     margin: 0px 490px 0px 0px;
 }
+
 
 .q-1 {
     display: flex;
@@ -763,18 +780,22 @@ h1 {
     filter: blur(0px);
 }
 
+
 .servicos-alinhamento {
     width: 931px;
 }
+
 
 #servicos {
     padding-top: 120px;
     margin-top: 100px;
 }
 
+
 .s-title {
     margin: 0;
 }
+
 
 .servico-caixa {
 
@@ -812,6 +833,7 @@ h1 {
     transition: all 0.5s;
 }
 
+
 .servico-caixa:hover{
     transform: rotate(45deg);
     border-color: #F7B993;
@@ -821,6 +843,7 @@ h1 {
 .serviços-linha1, .serviços-linha2 {
     display: flex;
 }
+
 
 .serviços-linha1 {
     margin-bottom: 78px;
@@ -1356,7 +1379,6 @@ footer {
        
         display: flex;
         align-items: center;
-        margin: 0;
         justify-content: center;
         
     }
@@ -1368,7 +1390,107 @@ footer {
     .q-1 {
         display: flex;
         flex-direction: column;
-    
-        margin: 0px 120px 0px 0px;
+        margin: 0;
     }
+
+    .serviços-background, .port-h1, .contato-h1 {
+        height: 290px;
+        background-color: #C18C54;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        margin-bottom: 100px;
+        
+    }
+    
+    
+    #servicos {
+        padding-top: 120px;
+        margin-top: 100px;
+    }
+    
+    
+    .s-title {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        
+        color: #f5f5f5;
+        display: inline-block;
+    }
+    
+    .serviços-linha1, .serviços-linha2 {
+        display: none;
+    }
+    
+
+    .wrapper{
+        display: flex;
+        max-width: 320px;
+        position: relative;
+      }
+
+      .wrapper i{
+        top: 50%;
+        cursor: pointer;
+        position: absolute;
+        text-align: center;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+      }
+
+      .wrapper i:active{
+        transform: translateY(-50%) scale(0.9);
+      }
+
+      .wrapper i:first-child{
+        left: 0px;
+        display: none;
+      }
+
+      .wrapper i:last-child{
+        right: 0px;
+      }
+
+      .wrapper .carousel{
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+      }
+
+      .carousel.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+      }
+
+      .carousel.dragging img{
+        pointer-events: none;
+      }
+
+      .carousel .img-1{
+        user-select: none;
+        margin-left: 30px;
+      }
+
+      .carousel .img-2, .carousel .img-3, .carousel .img-4 {
+        user-select: none;
+        margin-left: 10px;
+      }
+
+      .carousel .img-5 {
+        user-select: none;
+        margin-left: 11px;
+      }
+
+      .carousel .img-6 {
+        user-select: none;
+        margin-right: 30px;
+      }
+
+      .carousel img:first-child{
+        margin-right: 0px;
+      }
 }
