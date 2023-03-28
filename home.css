@@ -44,9 +44,12 @@ header {
     justify-content: space-between;
 }
 
+.wrapperP {
+    display: none;
+}
 
 body {
-    height: 9340px;
+    height: 9435px;
     background: linear-gradient(180deg, #000303 55.7%, #946643 117.14%);
 }
 
@@ -209,6 +212,10 @@ a {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.titulo-card-1-mobile {
+    display: none;
 }
 
 
@@ -753,17 +760,18 @@ h1 {
     height: 10px;
     background-color: #F5F5F5;
     border-radius: 50%;
-    margin: 0px 490px 0px 0px;
+
 }
 
 
 .q-1 {
     display: flex;
     flex-direction: column;
-
-    margin: 0px 120px 0px 0px;
 }
 
+.q-2 {
+    padding-top: 50px;
+}
 
 .escondido2 {
     opacity: 0;
@@ -1186,6 +1194,10 @@ footer {
     text-align: center;
 }
 
+.links-contato-2 {
+    display: none;
+}
+
 @media (max-width: 600px) {
     .grid, .alinhar {
         width: 320px;
@@ -1196,7 +1208,7 @@ footer {
     }
 
     body {
-        height: 6654px;
+        height: 6430px;
     }
     
     nav {
@@ -1523,7 +1535,7 @@ footer {
       }
 
       .wrapperP{
-        display: flex;
+        display: inline-flex;
         max-width: 320px;
         position: relative;
       }
@@ -1603,6 +1615,7 @@ footer {
         display: flex;
         flex-direction: column;
         margin-bottom: 145px;
+        transform: translateY(-40px);
     }
     
     .card-1 {
@@ -1625,7 +1638,7 @@ footer {
     }
     
     .titulo-card-1, .titulo-card-2 {
-        color: #FFFFFF;
+        color: #f5f5f5;
         font-family: 'Cabin', sans-serif;
         font-size: 14px;
         font-weight: 500;
@@ -1647,7 +1660,7 @@ footer {
     
     .form-title {
         font-family: 'Prompt', sans-serif;
-        color: #FFFFFF;
+        color: #f5f5f5;
         font-size: 12px;
     }
     
@@ -1682,7 +1695,7 @@ footer {
         outline: none;
         border: none;
     
-        color: #FFFFFF;
+        color: #f5f5f5;
     }
     
     #formulario textarea {
@@ -1691,7 +1704,7 @@ footer {
         outline: none;
         border: none;
     
-        color: #FFFFFF;
+        color: #f5f5f5;
     }
     
     #formulario #enviar {
@@ -1700,7 +1713,7 @@ footer {
         background-color: wheat;
         cursor: pointer;
     
-        color: #FFFFFF;
+        color: #f5f5f5;
         font-family: 'Cabin', sans-serif;
         font-size: 12px;
         font-weight: 500;
@@ -1733,7 +1746,7 @@ footer {
         font-family: 'Cabin', sans-serif;
         font-size: 12px;
         font-weight: 400;
-        color: #FFFFFF;
+        color: #f5f5f5;
         margin-bottom: 43px;
     }
     
@@ -1741,8 +1754,10 @@ footer {
         margin-bottom: 60px;
         margin-left: 0px;
     }
-    
     .links-contato {
+        display: none;
+    }
+    .links-contato-2 {
         width: 166px;
         display: flex;
         justify-content: space-between;    
@@ -1761,11 +1776,39 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: 400;
-        color: #FFFFFF;
+        color: #f5f5f5;
         text-align: center;
     }
 
-
-
+    .p1, .p2, .p3, .p4 {
+        color: #F7B993
     }
+
+    .mim {
+        color: #f5f5f5;
+    }
+
+    .foto-sobre {
+        display: none;
+    }
+
+    .cont-sub-2 {
+        display: none;
+    }
+
+    .titulo-card-1-mobile {
+        color: #f5f5f5;
+        font-family: 'Cabin', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        display:flex;
+        justify-content: center;
+        text-transform: uppercase;
+        margin-top: 40px;
+    }
+    
+    .titulo-card-1 {
+        display: none;
+    }
+}
 
