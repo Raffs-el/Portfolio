@@ -1219,7 +1219,7 @@ footer {
     }
 
     nav .logo-img {
-        padding-right: 120px;
+     
     }
 
     nav .menu {
@@ -1754,6 +1754,7 @@ footer {
         margin-bottom: 60px;
         margin-left: 0px;
     }
+
     .links-contato {
         display: none;
     }
@@ -1810,5 +1811,7 @@ footer {
     .titulo-card-1 {
         display: none;
     }
+
+    
 }
 
